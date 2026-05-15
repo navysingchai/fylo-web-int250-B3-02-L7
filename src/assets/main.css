@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-fylo-intro: #1c2431;
+  --color-fylo-main: #181f2a;
+  --color-fylo-footer: #0b1523;
+  --color-fylo-testimonials: #202a3c;
+  --color-fylo-cyan: #65e2d9;
+  --color-fylo-blue: #339ecc;
+  --color-fylo-accent: #ff4242;
+}
+
+:root {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: var(--color-fylo-main);
+  color: white;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
